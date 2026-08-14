@@ -1,0 +1,70 @@
+#pie{
+    grid-area: pie;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinea los elementos arriba para que queden prolijos */
+    padding: 60px 20px 20px;
+    background-color: #111;
+    color: white;
+}
+
+/* Estilo para agrupar el logo y el nombre de la clínica abajo */
+.logo-footer {
+    display: flex;
+    flex-direction: column; /* Pone la imagen arriba y el texto abajo, o quítalo si los quieres lado a lado */
+    align-items: flex-start;
+    max-width: 250px;
+}
+
+#pie img{
+    width: 140px;
+    height: auto;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* Fondo blanco opcional para que resalte tu logotipo blanco */
+    padding: 8px;              /* Espacio interno si usas fondo blanco */
+    border-radius: 6px;
+}
+
+.logo-footer h2 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+#menu2 h3{
+    color: #00b4d8;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#menu2 li{
+    list-style: none;
+}
+
+#menu2 a{
+    display: block;
+    line-height: 2.2;
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+#menu2 a:hover{
+    color: #00b4d8;
+    padding-left: 5px;
+}
+
+#copy{
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#copy p{
+    color: #888;
+    font-size: 0.9rem;
+}

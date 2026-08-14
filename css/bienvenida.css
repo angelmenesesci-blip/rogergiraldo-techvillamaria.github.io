@@ -1,0 +1,84 @@
+#bienvenida {
+    grid-area: bienvenida;
+    width: 100%;
+    max-width: 100%; /* Permite ocupar todo el ancho de la pantalla */
+    margin: 60px 0 40px 0; /* Separación del banner superior */
+    padding: 0 40px; /* Margen interno cómodo en los bordes */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Imagen de la sección */
+#bienvenida img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+/* Contenedor de texto */
+#mensaje {
+    width: 100%;
+    text-align: left;
+}
+
+#mensaje h2 {
+    color: #00a8ff;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#mensaje p {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: #2b2b2b;
+    font-weight: 500;
+    margin-bottom: 8px; /* Cambia esto a 8px o 10px para que los párrafos estén juntos */
+}
+#mensaje a.boton {
+    display: inline-block;
+    background-color: #d90429;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin-left: 0;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+#mensaje a.boton:hover {
+    background-color: #ffb703;
+    color: #000000;
+}
+
+/* ==========================================
+   ADAPTACIÓN RESPONSIVA (PANTALLAS GRANDES)
+   ========================================== */
+
+@media (min-width: 900px) {
+    #bienvenida {
+        flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 0 60px; /* Margen lateral limpio */
+    }
+
+    #bienvenida img {
+        width: 50%; /* La imagen ocupa la mitad izquierda exacta de la pantalla */
+    }
+
+    #mensaje {
+        width: 45%; /* El texto ocupa el lado derecho extendido */
+    }
+}
